@@ -82,16 +82,18 @@ public class Main {
         System.out.println("\n" + "Задание 6" );
 
         int[] arr2 = new int[12];
-        for(int i = 0; i < arr2.length; i++) {
-            int resultForSixthTask = r.nextInt(15);
-            arr2[i] = resultForSixthTask;
-            System.out.print(arr2[i]+ " ");
-        }
+//        for(int i = 0; i < arr2.length; i++) {
+//            int resultForSixthTask = r.nextInt(15);
+//            arr2[i] = resultForSixthTask;
+//            System.out.print(arr2[i]+ " ");
+//        }
         System.out.println("\n");
         int largest = 0;
+
+        arr2 = new int[]{1, 3, 4, 7, 3, 6, 7};
         for ( int i = 1; i < arr2.length; i++ )
         {
-            if ( arr2[i] > arr2[largest] ) largest = i;
+            if ( arr2[i] >= arr2[largest] ) largest = i;
         }
         System.out.println(largest);  //Индекс наибольшего элемента
    }
